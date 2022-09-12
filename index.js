@@ -10,7 +10,7 @@ connectDB();
 
 // middlewares
 app.use(express.json())
-app.use("/users", userRoute)
+app.use("/api/users", userRoute)
 app.use(morgan("dev"));
 
 

@@ -17,10 +17,17 @@ email: {
 password: {
     type: String,
     require: true,
-},
+}, 
+isAdmin: {
+    type: Boolean,
+    default: false
+}
 
 
 
-})
+}, { 
+    timestamps:true
+}
+)
 const User = mongoose.model("user", uesrSchema)
 module.exports = User;

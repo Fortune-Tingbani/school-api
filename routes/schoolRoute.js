@@ -3,6 +3,6 @@ const {Router} =require("express")
 
 const router = Router();
 router.post("/addschool", createSchool)
-router.route("/school").get(getSchools)
+router.route("/").get(getSchools)
 
 module.exports=router
